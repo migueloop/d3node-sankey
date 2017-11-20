@@ -1,5 +1,5 @@
 const D3Node = require('d3-node');
-const D3Sankey = require('d3-plugins-sankey');
+const Sankey = require('d3-sankey');
 
 const defaultContainer = `
 <div id="container">
@@ -26,11 +26,12 @@ function sankey (data, selector = '#chart', container = defaultContainer, styles
 
   const svg = d3n.createSVG(width, height);
 
+
   const formatNumber = d3.format(",.0f"),
       format = function(d) { return formatNumber(d) + " TWh"; },
       color = d3.scaleOrdinal(d3.schemeCategory10);
 
-  let sankey = d3.sankey()
+  this.sankey = d3.sankey()
       .nodeWidth(15)
       .nodePadding(10)
       .extent([[1, 1], [width - 1, height - 6]])

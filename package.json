@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/d3-node/d3node-voronoi.git"
+    "url": "http://github.com/d3-node/d3node-sankey.git"
   },
   "keywords": [
     "d3",
     "cli",
     "node"
   ],
-  "author": "Brad Oyler",
+  "author": "Miguel Ruiz",
   "license": "MIT",
   "dependencies": {
     "d3-node": "^1.1.1",
-    "d3-plugins-sankey": "^1.2.1"
+    "d3-sankey": "^0.7.1"
   },
   "devDependencies": {
     "d3node-output": "^1.0.1"
